@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        #boton{
+            margin-left: 46vw;
+            margin-right: 46vw ;
+            color:rgb(241, 84, 202);
+            border-radius: 20%;
+            border: solid;
+            border-color: rgb(241, 84, 202);
+            border-width: 2px;
+            background-color: lightpink;
+            padding: 0.5%;
+            position: center;
+           
+        }
+      
+        #boton:focus{
+            cursor:pointer;
+        }
+        .modal-contenido{
+            position: center;
+            width: 60vw;
+            height: 50vh;
+            padding: 10px 20px;
+            margin: 10% auto;
+            text-align: center;
+        }
+      
+        .modal{
+            transition: all 1s;
+            background-color: rgba(0, 0, 0, 0.8);
+            position:fixed;
+            top:0;
+            right:0;
+            bottom:0;
+            left:0;
+            opacity:0;
+            pointer-events:none;
+           
+        }
+        #miModal:target{
+             opacity:0.8;
+             pointer-events:auto;
+        }
+ 
+        div::first-letter {
+            font-size: 200%;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        div:nth-child(2n) {
+            background-color: whitesmoke;
+            display: inline-block;
+        }
+
+        div:nth-child(2n+1) {
+           
+            background-color: lightgrey;
+          
+           
+        }
+
+        div p:last-of-type::after {
+            content: "...";
+        }
+
+        body {
+            background-color:lightgrey;
+        }
+
+        p {
+           
+            margin-left: auto;
+            margin-right: auto;
+              
+        }
+
+        div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+      
+
+        a:link {
+            color:rgb(15, 192, 133);
+        }
+    </style>
+</head>
+<body>
+    <p>Soldadito Marinero</p>
+    
+   
+   
+    <div>
+        <p>Él camina despacito que las prisas no son buenas</p>
+        <p>En su brazo dobladita, con cuidado la chaqueta</p>
+        <p>Luego pasa por la calle dónde los chavales juegan</p>
+        <p>Él también quiso ser niño pero le pilló la guerra</p>
+    </div>
+
+            <div>
+                <p>Soldadito marinero conociste a una sirena</p>
+                <p>De esas que dicen te quiero si ven la cartera llena</p>
+                <p>Escogiste a la más guapa y a la menos buena</p>
+                <p>Sin saber como ha venido te ha cogido la tormenta</p>
+            </div>
+
+            <div>
+                <p>Él quería cruzar los mares y olvidar a su sirena</p>
+                <p>La verdad, no fue difícil cuando conoció a Mariela</p>
+                <p>Que tenía los ojos verdes y un negocio entre las piernas</p>
+                <p>Hay que ver que puntería, no te arrimas a una buena</p>
+            </div>
+
+            <div>
+                <p>Soldadito marinero conociste a una sirena</p>
+                <p>De esas que dicen te quiero si ven la cartera llena</p>
+                <p>Escogiste la más guapa y a la menos buena</p>
+                <p>Sin saber como ha venido te ha cogido la tormenta</p>
+            </div>
+
+            <div>
+                <p>Después de un invierno malo, una mala primavera</p>
+                <p>Dime por que estas buscando una lágrima en la arena</p>
+                <p>Después de un invierno malo</p>
+            </div>
+    
+    </div>
+    <a id="boton" href="#miModal">HOLA</a>
+        <div id="miModal" class="modal">
+        <div class="modal-contenido">
+          
+            <a href="https://www.letras.com/fito-fitipaldis/614056/" target="_blank">Pulsa para ir a la letra</a>
+            <h2>Fito y Fitipaldis</h2>
+            <h3>Soldadito Marinero</h3>
+            <a href="">Pulsa para cerrar</a>
+       
+        </div>  
+    </div>
+</body>
+</html>
